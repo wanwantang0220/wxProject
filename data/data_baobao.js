@@ -126,7 +126,7 @@ var cars = [{
   image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S06PJM5O0805P'
 }, {
   name: '跑车',
-    image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S06PVT0O0805R'
+  image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S06PVT0O0805R'
 }, {
   name: '跑车',
   image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S06QJ1MO0805T'
@@ -160,6 +160,18 @@ var cars = [{
 }, {
   name: '装甲车',
   image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S063T5NO0805L'
+}, {
+  name: '坦克车',
+  image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S08SU57O08060'
+}, {
+  name: '坦克车',
+  image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S08UCEAO08062'
+}, {
+  name: '坦克车',
+  image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S08UQPPO08064'
+}, {
+  name: '坦克车',
+  image_url: 'http://gridfs-cs.icerno.com/gridfs/find?fileId=129S08V961O08066'
 }]
 module.exports = {
   colors,
