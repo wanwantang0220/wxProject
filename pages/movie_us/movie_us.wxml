@@ -1,0 +1,34 @@
+<!--pages/movie/movie.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">
+  <view class='contain'>
+
+    <view class='header_view'>
+      <view class='header_title'>{{title}}</view>
+    </view>
+
+    <view>
+      <block wx:for="{{mList}}" wx:for-item="item" wx:key="{{item.rank}}">
+        <view class='list_item' catchtap='bindViewTap' data-postid="{{item.subject.id}}">
+          <image class='list_image' src='{{item.subject.images.small}}' mode='scaleToFill' />
+          <view class='list_right'>
+            <text class='list_item_text1'>{{item.title}}</text>
+            <text class='listr_item_text2'>导演：{{ (item.subject.directors[0] != null ? item.subject.directors[0].name : "未知")}}</text>
+            <text class='listr_item_text2'>主演：{{item.subject.actors}}</text>
+
+
+            <view clas="rating_view">
+              <wux-rater class="rater" slot="footer" value="{{ item.subject.rating.showrating }}" allow-half auto="{{ false }}" active-color="#FFDA00" font-size="{{16 }}" disabled />
+              <text class='rater_text'>{{item.subject.rating.showrating}}星</text>
+            </view>
+
+            <view class='list_item_text3'>{{item.subject.collect_count}} {{content}}</view>
+
+
+          </view>
+
+        </view>
+
+      </block>
+    </view>
+  </view>
+</scroll-view>

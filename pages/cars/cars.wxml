@@ -1,0 +1,23 @@
+<!--pages/cars/cars.wxml-->
+
+
+
+
+
+<view class='container' scroll-y="true" bindscrolltolower="searchScrollLower">
+
+  <view class='view_title'>汽车</view>
+  <swiper class='view_main' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{carsList}}" wx:key="">
+      <swiper-item class='swiper'>
+        <view class='view_center'>
+          <image class='color_center' src='{{item.image_url}}' mode='aspectFit'></image>
+          <view class='color_text'>{{item.name}}</view>
+        </view>
+      </swiper-item>
+
+    </block>
+  </swiper>
+
+  <!-- </view> -->
+</view>

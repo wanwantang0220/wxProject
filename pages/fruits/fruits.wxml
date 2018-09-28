@@ -1,0 +1,10 @@
+<view>
+
+  <block wx:for="{{fruitsList}}" wx:key="">
+    <view class='view_center'>
+      <image class='color_center' src='{{item.image_url}}'></image>
+    </view>
+  </block>
+
+
+</view>

@@ -1,0 +1,64 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">
+  <view class='contain'>
+
+    <view class='view_title'>
+      <view class='view_author'>
+        <image class='view_author_header' src='{{resData.images.small}}'></image>
+        <view class='view_author_right'>
+          <text class='view_author_title'>{{resData.subtitle}}</text>
+          <text class='view_author_name'>{{resData.author[0]}}</text>
+        </view>
+      </view>
+      <view class='view_publish'>
+        <text class='view_publish_name'>出版时间：{{resData.pubdate}}</text>
+        <text class='view_publish_name'>出版社 ：{{resData.publisher}}</text>
+        <text class='view_publish_name'>页数 ：{{resData.pages}}页</text>
+        <text class='view_publish_name'>标签 :     {{tagInfo}}</text>
+      </view>
+    </view>
+
+    <view class='author_intro'>
+      <text class='author_intro_title'>作者简介</text>
+      <view class='author_intro_text'>{{resData.author_intro}}</view>
+    </view>
+
+    <view class='author_intro'>
+      <text class='author_intro_title'>简介</text>
+      <view class='author_intro_text'>{{resData.summary}}</view>
+    </view>
+
+    <!-- <view class='header_view'>
+      <view class='header_title'>主演</view>
+    </view>
+    <view class="image_view">
+      <image class='image' src='{{resData.images.large}}'></image>
+    </view>
+
+    <view class='info'>
+      <view class='info_left'>
+        <view class='info_title'>{{resData.title}}</view>
+        <view class='info_text'>{{resData.year}}/{{resData.countries[0]}}</view>
+        <view class='info_text'>原名：{{resData.original_title}}</view>
+      </view>
+      <view class='info_right'>
+        <view class='info_text'>综合评分</view>
+        <view class='info_title'>{{resData.rating.average}}</view>
+        <view class='info_text'>{{resData.ratings_count}}人</view>
+      </view>
+    </view> -->
+
+
+
+
+    <view class='line'></view>
+
+
+
+    <view class='line'></view>
+
+
+    <view class='line'></view>
+  </view>
+
+</scroll-view>

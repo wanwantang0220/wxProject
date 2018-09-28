@@ -1,0 +1,67 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">
+  <view class='contain'>
+
+    <view class='header_view'>
+      <view class='header_title'>主演</view>
+    </view>
+    <view class="image_view">
+      <image class='image' src='{{resData.images.large}}'></image>
+    </view>
+
+    <view class='info'>
+      <view class='info_left'>
+        <view class='info_title'>{{resData.title}}</view>
+        <view class='info_text'>{{resData.year}}/{{resData.countries[0]}}</view>
+        <view class='info_text'>原名：{{resData.original_title}}</view>
+        <!-- <view class='info_text'>{{resData.directors[0].name}}</view> -->
+      </view>
+      <view class='info_right'>
+        <view class='info_text'>综合评分</view>
+        <view class='info_title'>{{resData.rating.average}}</view>
+        <view class='info_text'>{{resData.ratings_count}}人</view>
+      </view>
+    </view>
+
+
+    <view class='rating_view'>
+      <view class='rating_text'>评分</view>
+      <wux-rater class="rater" slot="footer" value="{{ rating }}" allow-half auto="{{ false }}" active-color="#FFDA00" font-size="{{16 }}" disabled />
+    </view>
+
+    <view class='line'></view>
+
+    <!-- 简介 -->
+    <view class='intro_view'>
+      <view class='info_title'>简介</view>
+      <view class='intro_text'>{{resData.summary}}</view>
+    </view>
+
+    <view class='line'></view>
+    <!-- 导演 -->
+    <view class='directors_view'>
+      <view class='info_title'>导演</view>
+      <block wx:for="{{resData.directors}}" wx:key="unique" data-data="{{item}}">
+        <view class='directors_view_item'>
+          <image class='directors_image' src='{{item.avatars.large}}' mode=''></image>
+          <view class='directors_text' style=''>{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+
+    <view class='line'></view>
+
+    <!-- 演员 -->
+    <view class='actors_view'>
+      <view class='info_title'>演员</view>
+      <view class='actors__view_item'>
+        <block wx:for="{{resData.casts}}" wx:key="unique" data-data="{{item}}">
+          <view class='directors_view_item'>
+            <image class='actors_image' src='{{item.avatars.large}}' mode=''></image>
+            <view class='directors_text' style=''>{{item.name}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,52 @@
+<!--pages/home/home.wxml-->
+
+
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">
+  <view class='contain'>
+
+    <!-- <view class='header_view'> -->
+      <!-- <image class='header_image' mode='aspectFit' src='../../images/icon_menu.png'></image> -->
+      <!-- <view class='header_title'>首页</view> -->
+      <!-- <image class='header_image' mode='aspectFit' src='../../images/icon_search.png'></image> -->
+    <!-- </view> -->
+    <view class='swiper'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{bannerList}}" wx:key="*this">
+          <swiper-item>
+            <view class='swiper_item' catchtap='bindViewTap' data-postid="{{item.id}}">
+              <image class='banner_image' src='{{item.images.large}}' mode='scaleToFill' />
+              <view class='banner_right'>
+                <text class='banner_right_text1'>{{item.title}}</text>
+                <text class='banner_right_text2'>导演：{{ (item.directors[0] != null ? item.directors[0].name : "未知")}}</text>
+                <text class='banner_right_text2'>主演：{{item.actors}}</text>
+                <text class='banner_right_text3'>{{item.collect_count}}看过</text>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class='cate_view'>
+      <block wx:for="{{cateList}}" wx:key="unique" data-data="{{item}}">
+        <view class='cate_item' catchtap='bindViewTapCate' data-postid="{{item}}">
+          <image class="cate_item_image" style="background: linear-gradient({{item.colors[0]}},{{item.colors[1]}})" src='{{item.icon}}' mode='aspectFit'></image>
+          <text class='cate_item_text'>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+
+
+    <view class='list_view'>
+      <block wx:for="{{mList}}" wx:for-item="item" wx:key="{{item.id}}">
+        <view class='list_item' catchtap='bindViewTap' data-postid="{{item.id}}">
+          <view class='list_item_container'>
+            <image class='list_item_image' src='{{item.images.large}}' mode='scaleToFill'></image>
+            <text class='list_item_text'>{{item.title}}</text>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+</scroll-view>

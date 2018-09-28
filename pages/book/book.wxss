@@ -1,0 +1,56 @@
+/* pages/book/book.wxss */
+
+.view_item {
+  width: 100%-40rpx;
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  background: #937eff;
+  border-radius: 10rpx;
+}
+
+.image_pic {
+  width: 200rpx;
+  height: 300rpx;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  flex: 1;
+}
+
+.view_right {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  margin: 20rpx;
+}
+
+.text_title {
+  color: #fff;
+  font-size: 18px;
+}
+
+.text {
+  color: #fff;
+  font-size: 14px;
+  padding-top: 10rpx;
+  padding-bottom: 5rpx;
+}
+
+.text_detail {
+  color: #fff;
+  font-size: 12px;
+  padding-top: 10rpx;
+  padding-bottom: 5rpx;
+  /* 多出不分隐藏 */
+  overflow: hidden;
+  /* 设定行数为2 */
+  -webkit-line-clamp: 4;
+  /* 超出文字用省略号代替 */
+  text-overflow: -o-ellipsis-lastline;
+  /* 将对象作为弹性伸缩盒子模型显示 */
+  display: -webkit-box;
+  /* 设置或检索伸缩盒对象的子元素的排列方式 竖直方向的超出和隐藏 */
+  -webkit-box-orient: vertical;
+  /* align-content 属性在弹性容器内的各项没有占用交叉轴上所有可用的空间时对齐容器内的各项（垂直） */
+  align-content: center;
+}

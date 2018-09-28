@@ -1,0 +1,18 @@
+<!--pages/music/music.wxml-->
+<view>
+
+  <block wx:for="{{musicList}}" wx:for-item="item" wx:key="{{item.id}}">
+    <view class='view_item' catchtap='bindViewTap'>
+      <view class='view_title'>
+        <image class='image_pic' src="{{item.image}}" mode="scaleToFill"></image>
+        <view class='view_title_right'>
+          <text class='text_title'>{{item.title}}</text>
+          <text class='text_content'>{{item.alt_title}}</text>
+        </view>
+      </view>
+      <view class='view_content'>
+        <text class='text_content'>{{item.attrs.tracks[0]}} </text>
+      </view>
+    </view>
+  </block>
+</view>

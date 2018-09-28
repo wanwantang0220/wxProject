@@ -1,0 +1,16 @@
+<!--pages/music/music.wxml-->
+<view>
+
+  <block wx:for="{{bookList}}" wx:for-item="item" wx:key="{{item.id}}">
+    <view class='view_item' catchtap='bindViewTap' data-postid="{{item.id}}">
+      <image class='image_pic' src="{{item.image}}" mode="scaleToFill"></image>
+      <view class='view_right'>
+
+        <text class='text_title'>{{item.title}}</text>
+        <text class='text'>{{item.publisher}}</text>
+        <text class='text'>{{item.price}}</text>
+        <text class='text_detail'>作者简介：{{item.author_intro}}</text>
+      </view>
+    </view>
+  </block>
+</view>

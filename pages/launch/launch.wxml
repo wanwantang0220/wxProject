@@ -1,0 +1,15 @@
+<!--pages/launch/launch.wxml-->
+<view class='container'  style="background-image: url('http://gridfs-cs.icerno.com/gridfs/find?fileId=129K10JABRO0800H');background-size:100% 100%;background-repeat:no-repeat;">
+  <view class='view_content'>
+    <view class='text_title'>倾城时光</view>
+    <view class='view_center'>
+      <image class='view_center_image' src='http://gridfs-cs.icerno.com/gridfs/find?fileId=129K10LTVFO0800J' mode='scaleToFill'></image>
+      <view class='view_center_text'>欢迎来到宝宝的世界</view>
+      <view class='view_center_text'  bindtap='go'>进入</view>
+    </view>
+
+
+  </view>
+  <!-- <view class='image'></view> -->
+
+</view>

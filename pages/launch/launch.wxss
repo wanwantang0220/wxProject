@@ -1,0 +1,62 @@
+/* pages/launch/launch.wxss */
+
+.container {
+  width: 750rpx;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container .image_bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.container .view_content {
+  width: 550rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.text_title {
+  width: 100%;
+  height: 150rpx;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+  color: #fff;
+  align-items: center;
+  align-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.view_center {
+  width: 100%;
+  height: 1000rpx;
+  border-radius: 15rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.view_center_image {
+  width: 100%;
+  height: 300rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+}
+
+.view_center_text {
+  width: 100%;
+  margin: 20rpx;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+<!--pages/baobao/color/color.wxml-->
+
+<view class='container' scroll-y="true" bindscrolltolower="searchScrollLower">
+
+  <view class='view_title'>颜色查看</view>
+  <swiper class='view_main' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{animalsList}}" wx:key="" >
+      <swiper-item class='swiper'>
+        <view class='view_center'>
+          <image class='color_center' src='{{item.image_url}}'></image>
+          <!-- <view class='color_center' style='background:{{item.color}}'></view> -->
+          <view class='color_text'>{{item.name}}</view>
+        </view>
+      </swiper-item>
+
+    </block>
+  </swiper>
+
+  <!-- </view> -->
+</view>

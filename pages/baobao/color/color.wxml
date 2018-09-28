@@ -1,0 +1,9 @@
+<!--pages/baobao/color/color.wxml-->
+<scroll-view class='container' scroll-x scroll-with-animation>
+  <block wx:for="{{colorsList}}" wx:key="unique" wx:for-index="id" wx:for-item="item">
+    <view class='color_center' style='background:{{item.color}}'></view>
+
+    <view class='color_text'>{{item.name}}</view>
+  </block>
+
+</scroll-view> >

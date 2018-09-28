@@ -1,0 +1,16 @@
+<!--pages/bao_home/bao_home.wxml-->
+<view class='container'>
+
+  <view class='view_center'>
+
+    <view class='view_center_child'>
+      <view class='view_center_item' style='background:linear-gradient(to bottom  right, #e2caf8,#8a2be2, #e2caf8,#eedefa)'  bindtap='colorTap'>颜色</view>
+      <view class='view_center_item' style='background:linear-gradient(to bottom right,#f3e4d2,#deb887,#f3e4d2,#faeede)'  bindtap='animalTap'>动物</view>
+    </view>
+    <view class='view_center_child'>
+      <view class='view_center_item' style='background:linear-gradient(to bottom right,#fae5de,#e9967a,#fae5de,#dee0fa)' bindtap='fruitlTap' >水果</view>
+      <view class='view_center_item' style='background:linear-gradient(120deg,#8014ff,#ffce14,#fae5de,#dee0fa)' bindtap='carTap' >汽车</view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,11 @@
+#multi-bar-dom {
+  height: 33%;
+}
+
+#multi-scatter-dom {
+  height: 33%;  
+}
+
+#multi-radial-dom {
+  height: 33%;  
+}

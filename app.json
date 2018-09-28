@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/launch/launch",
+    "pages/baobao/animal/animal",
+    "pages/css/css",
+    "pages/chart/chart",
+    "pages/home/home",
+    "pages/book/book",
+    "pages/music/music",
+    "pages/cate/cate",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/test/test",
+    "pages/movie/movie",
+    "pages/movie_us/movie_us",
+    "pages/web_view/web_view",
+    "pages/book_detail/book_detail",
+    "pages/baobao/color/color",
+    "pages/baobao/fruits/fruits",
+    "pages/color/color",
+    "pages/fruits/fruits",
+    "pages/animal/animal",
+    "pages/bao_home/bao_home",
+    "pages/cars/cars"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#937eff",
+    "list": [
+      {
+        "pagePath": "pages/baobao/animal/animal",
+        "text": "动物",
+        "iconPath": "./images/icon_animal.png",
+        "selectedIconPath": "./images/icon_animal_active.png"
+      },
+      {
+        "pagePath": "pages/baobao/fruits/fruits",
+        "text": "水果",
+        "iconPath": "./images/icon_fruit.png",
+        "selectedIconPath": "./images/icon_fruit_active.png"
+      },
+      {
+        "pagePath": "pages/baobao/color/color",
+        "text": "颜色",
+        "iconPath": "./images/icon_color.png",
+        "selectedIconPath": "./images/icon_color_active.png"
+      }
+    ]
+  }
+}

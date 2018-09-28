@@ -1,0 +1,28 @@
+/* pages/baobao/animal/animal.wxss */
+
+
+
+
+.container {
+  background: linear-gradient(to bottom right, #e2caf8, #ffe2f2, #ffb99f, #88a1ec, #ffffbf);
+}
+
+.view_center {
+  width: 100%;
+  background: linear-gradient(to bottom right, #e2caf8, #ffe2f2, #ffb99f, #88a1ec, #ffffbf);
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+}
+
+.color_center {
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  align-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+}

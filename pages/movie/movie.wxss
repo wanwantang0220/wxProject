@@ -1,0 +1,71 @@
+/* pages/movie/movie.wxss */
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  background: #937eff;
+  /* align-items: center; */
+  border-radius: 10rpx;
+}
+
+.list_image {
+  flex: 1;
+  margin: 20rpx;
+  height: 260rpx;
+  border-radius: 20rpx;
+}
+
+.list_right {
+  flex: 2;
+  display: flex;
+  margin: 20rpx;
+  flex-direction: column;
+  text-align: left;
+}
+
+.list_item_text1 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.listr_item_text2 {
+  font-size: 12px;
+  color: #fff;
+  padding-top: 10rpx;
+}
+
+.list_item_text3 {
+  font-size: 12px;
+  color: #fff;
+}
+
+.actors {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating_view {
+  width: 100%;
+  /* background: #fff; *//* height: 60rpx; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  /* margin: 20rpx; */
+  align-items: center;
+  justify-content: "center";
+}
+
+.rater {
+  /* margin-left: 40rpx; */
+  align-items: center;
+  justify-content: "center";
+}
+
+.rater_text {
+  font-size: 12px;
+  color: #ffda00;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
