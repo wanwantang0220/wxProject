@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/normal/normal_home/normal_home",
     "pages/launch/launch",
     "pages/baobao/animal/animal",
     "pages/css/css",
@@ -21,7 +22,9 @@
     "pages/fruits/fruits",
     "pages/animal/animal",
     "pages/bao_home/bao_home",
-    "pages/cars/cars"
+    "pages/cars/cars",
+    "pages/normal/normal_stores/normal_stores",
+    "pages/normal/normal_sings/normal_sings"
   ],
   "window": {
     "backgroundTextStyle": "light",
